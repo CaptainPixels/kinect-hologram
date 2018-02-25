@@ -165,7 +165,7 @@ namespace FaceTrackingBasics
                         if (position.X != 0 && position.Y != 0 && position.Z != 0)
                         {
                             Console.WriteLine($"Face {i}: X {position.X}, Y {position.Y}, Z {position.Z}");
-                            string text = position.X + " " + position.Y + " " + position.Z;
+                            string text = position.X + "@x " + position.Y + "@y " + position.Z + "@z";
                             System.IO.File.WriteAllText(@"C:\Users\Corbin Pixels\Desktop\kinect\FaceTrackingBasics-WPF\coords.txt", text);
                         }
                         // Give each tracker the upated frame.
