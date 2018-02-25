@@ -8,7 +8,7 @@ frames = 10
 while running <= frames:
     filename = 'C:\\Users\\Corbin Pixels\\Desktop\\kinect\\FaceTrackingBasics-WPF\\coords.txt'
     file = open(filename, "r")
-    coords = file.read()
+      coords = file.read()
     #print(coords)
     coordXstr = coords[:coords.find('@x')]
     coordYstr = coords[coords.find('@x')+3:coords.find('@y')]
